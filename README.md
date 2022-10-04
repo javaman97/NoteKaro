@@ -6,4 +6,3 @@ Tech Used in this App :-
 3) MVVM Architecture
 4) ROOM DB(Sqlite)
 5) Recycler View
-6)
