@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Notes</string>
-    <string name="submit">SUBMIT</string>
+    <string name="app_name">NoteKaro</string>
+    <string name="submit">Add Note</string>
     <string name="enter_the_note">Enter the Note</string>
 </resources>

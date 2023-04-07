@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity(), INotesRVAdapter {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         recyclerView = findViewById(R.id.recyclerView)
-        input=findViewById(R.id.input)
+        input=findViewById(R.id.edit_text)
         recyclerView.layoutManager = LinearLayoutManager(this)
         val adapter =NotesRVAdapter(this,this)
         recyclerView.adapter=adapter

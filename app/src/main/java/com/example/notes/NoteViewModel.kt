@@ -8,7 +8,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class NoteViewModel(application: Application) : AndroidViewModel(application) {
-    val repository:NoteRepository
+    private val repository:NoteRepository
     val allNotes:LiveData<List<Note>>
             init{
                 val dao=NoteDatabase.getDatabase(application).getNoteDao()
