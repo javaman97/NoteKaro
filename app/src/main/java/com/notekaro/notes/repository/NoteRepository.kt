@@ -1,6 +1,8 @@
-package com.example.notes
+package com.notekaro.notes.repository
 
 import androidx.lifecycle.LiveData
+import com.notekaro.notes.database.dao.NoteDao
+import com.notekaro.notes.model.Note
 
 class NoteRepository(private val noteDao: NoteDao){
 
@@ -13,5 +15,9 @@ class NoteRepository(private val noteDao: NoteDao){
      fun delete(note: Note)
     {
         noteDao.delete(note)
+    }
+
+    fun update(note: Note){
+        noteDao.update(note)
     }
 }

@@ -1,4 +1,4 @@
-package com.example.notes
+package com.notekaro.notes
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
