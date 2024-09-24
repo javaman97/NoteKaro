@@ -7,14 +7,14 @@ import com.notekaro.notes.model.Note
 @Dao
 interface NoteDao {
     @Insert(onConflict=OnConflictStrategy.IGNORE)
-     fun insert(note: Note)
+     suspend fun insert(note: Note)
 
     @Delete
-     fun delete(note: Note)
+     suspend fun delete(note: Note)
 
      @Update
-     fun update(note: Note)
+     suspend fun update(note: Note)
 
     @Query("Select * from notes_table order by id ASC")
-    fun getAllNotes():LiveData<List<Note>>
+     fun getAllNotes():LiveData<List<Note>>
 }
